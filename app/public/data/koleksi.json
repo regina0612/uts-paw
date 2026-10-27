@@ -1,10 +1,91 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Komputer",
+    "kategori": "Komputer",
+    "KodeAlat": "KOM01",
+    "Jumlah": 30,
+    "Kondisi": "Baik"
+  },
+  {
+    "id": "2",
+    "judul": "Infokus",
+    "kategori": "Komputer",
+    "KodeAlat": "KOM02",
+    "Jumlah": 3,
+    "Kondisi": "Perlu Servis"
+  },
+  {
+    "id": "3",
+    "judul": "Mic",
+    "kategori": "Electronik",
+    "KodeAlat": "ELK01",
+    "Jumlah": 5,
+    "Kondisi": "Baik"
+  },
+  {
+    "id": "4",
+    "judul": "Sound",
+    "kategori": "Electronik",
+    "KodeAlat": "ELK02",
+    "Jumlah": 1,
+    "Kondisi": "Baik"
+  },
+  {
+    "id": "5",
+    "judul": "Printer",
+    "kategori": "Komputer",
+    "KodeAlat": "KOM03",
+    "Jumlah": 2,
+    "Kondisi": "Rusak"
+  },
+    {
+    "id": "6",
+    "judul": "Solder",
+    "kategori": "Electronik",
+    "KodeAlat": "ELK03",
+    "Jumlah": 5,
+    "Kondisi": "Baik"
+  },
+  {
+    "id": "7",
+    "judul": "Laptop Lab1",
+    "kategori": "Komputer",
+    "KodeAlat": "KOM04",
+    "Jumlah": 10,
+    "Kondisi": "Baik"
+  },
+  {
+    "id": "8",
+    "judul": "Router",
+    "kategori": "Komputer",
+    "KodeAlat": "KOM05",
+    "Jumlah": 2,
+    "Kondisi": "Perlu Servis"
+  },
+  {
+    "id": "9",
+    "judul": "Kabel UTP",
+    "kategori": "Electronik",
+    "KodeAlat": "ELK04",
+    "Jumlah": 10,
+    "Kondisi": "Baik"
+  },
+  {
+    "id": "10",
+    "judul": "Crimping",
+    "kategori": "Electronik",
+    "KodeAlat": "ELK05",
+    "Jumlah": 5,
+    "Kondisi": "Baik"
+  },
+    {
+    "id": "11",
+    "judul": "Arduino Uno",
+    "kategori": "Electronik",
+    "KodeAlat": "ELK06",
+    "Jumlah": 10,
+    "Kondisi": "Baik"
   }
+  
 ]
