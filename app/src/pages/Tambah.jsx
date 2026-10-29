@@ -3,11 +3,22 @@ const kondisiawal = { judul: '', kategori: 'Komputer', kodeAlat: '', jumlah: 0, 
 export default function Tambah() {
   const [form, setForm] = useState(kondisiawal)
   const databaru = (inputan) => setForm({...form, [inputan.target.name]: inputan.target.value})
+    const [error, setError] = useState('')
+  const simpan =  (simpan) => {
+    simpan.preventDefault()
+    if (form.judul.trim() === '' || form.kodeAlat.trim() === '' || form.jumlah <= 0) {
+      setError('Judul dan Kode Alat tidak boleh kosong, jumlah barang harus lebih dari 0.')
+      return
+    }
+    setError('')
+    console.log(form)
+  }
 
   return (
   <section>
     <h1>Tambah Barang Inventaris</h1>
-    <form>
+    <form onSubmit={simpan} noValidate>
+      {error && <p role="alert">{error}</p>}
         <label htmlFor="judul">Judul:</label>
         <input type="text" id="judul" name="judul" value={form.judul} onChange={databaru} />
         <label htmlFor="kategori">Kategori:</label>
