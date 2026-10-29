@@ -15,7 +15,7 @@ export default function Detail() {
   if (loading) return <p>Loading...</p>
   if (!alat) return ( 
   <section>
-    <p>Tidak ada alat dengan ID = {id}.</p>
+    <p>alat dengan ID = {id} tidak ditemukan.</p>
     <Link to="/koleksi">Back</Link>
   </section>
   )
