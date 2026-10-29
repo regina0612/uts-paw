@@ -15,10 +15,11 @@ export default function Koleksi() {
   return (
     <section>
       <h1>Inventaris</h1>
+      
       <div className="koleksi">
         <KotakPencarian nilai={cari} onUbah={setCari} />
       </div>
-      {datasesuai.length === 0 ? (<p>Tidak ada item yang cocok.</p>) 
+      {datasesuai.length === 0 ? (<p>Tidak ditemukan.</p>) 
       : (
         <div className="daftar-kartu">
           {datasesuai.map((item) => (
