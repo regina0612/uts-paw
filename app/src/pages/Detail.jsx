@@ -28,6 +28,8 @@ export default function Detail() {
         <dd>{alat.id}</dd>
         <dt>Kategori</dt>
         <dd>{alat.kategori}</dd>
+        <dt>Kode Alat</dt>
+        <dd>{alat.kodeAlat}</dd>
         <dt>Jumlah</dt>
         <dd>{alat.jumlah}</dd>
         <dt>Kondisi</dt>
