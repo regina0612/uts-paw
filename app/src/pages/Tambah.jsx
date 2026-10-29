@@ -1,16 +1,23 @@
 import { useState } from 'react'
+import useKoleksi from '../hooks/useKoleksi.js'
+import { useNavigate } from 'react-router-dom'
+
 const kondisiawal = { judul: '', kategori: 'Komputer', kodeAlat: '', jumlah: 0, kondisi: 'Baik' }
 export default function Tambah() {
   const [form, setForm] = useState(kondisiawal)
   const databaru = (inputan) => setForm({...form, [inputan.target.name]: inputan.target.value})
-    const [error, setError] = useState('')
+  const [error, setError] = useState('')
+  const { tambah } = useKoleksi()
+  const navigasi = useNavigate()
   const simpan =  (simpan) => {
     simpan.preventDefault()
     if (form.judul.trim() === '' || form.kodeAlat.trim() === '' || form.jumlah <= 0) {
       setError('Judul dan Kode Alat tidak boleh kosong, jumlah barang harus lebih dari 0.')
       return
     }
+    tambah({...form,judul: form.judul.trim(), jumlah: Number(form.jumlah)})
     setError('')
+    navigasi('/koleksi')
     console.log(form)
   }
 
