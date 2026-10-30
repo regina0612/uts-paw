@@ -65,7 +65,7 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 ```markdown
 # Nama Aplikasi
 
-Nama: Reginna Cahyani Puteri
+Nama: Regina Cahyani Puteri
 NIM: 124140063
 Kelas: RA
 Tema: Inventaris Laboraturium
