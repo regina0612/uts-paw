@@ -60,9 +60,7 @@ Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi me
 
 ## README milikmu
 
-Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Kerangka berikut boleh dipakai:
-
-```markdown
+INVEN LAB adalah web sederhana untuk mnegelolah barang barang yang terdapat pada laboraturium fungsi yang ada adalah menampilkan barang inven, menhapus barang, dan menambah barang
 # Nama Aplikasi
 
 Nama: Regina Cahyani Puteri
@@ -75,7 +73,34 @@ Deployment: https://github.com/regina0612/uts-paw.git
 
 ## Fitur
 
-- ...
+1. Beranda
+- menampilkan judul dan tema
+- menampilkan jumlah barang saat ini dan jumlah katagori
+- tombol menuju halaman koleksi
+
+2. Koleksi
+- menampilkan kartu barang inven
+- memcari barang berdasarkan judul
+- membuka kartu = menuju halaman detail
+
+3. Detail
+- menampilkan informasi detail barang
+- menghapus barang inven
+- kembali ke halaman koleksi
+
+4. Tambah
+- input judul
+- pilih katagori (dropdown)
+- input kodebarang
+- input jumlah barang
+- pilih konidisi barang
+- melakukan penyimpanan = kembali ke halaman koleksi
+
+5. Statistik
+- menampilkan jumlah barang per katagori
+
+6. Tentang
+- menampilkan data diri
 
 ## Menjalankan secara lokal
 
@@ -85,5 +110,18 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+1. Komponen dan props
+Terdapat 3 komponen terpisah yaitu Layout.jsx , KartuItem.jsx , dan KotakPencarian,jsx yang dimana 3 komponen terpisah ini dapat di panggil di komponen komponen lain. Terdapat 2 props (memberikan data dari komponen perent ke childern) yaitu pada halaman koleksi dimana halaman koleksi menerima komponen KotakPencarian.jsx dan KartItem.jsx
+
+2. useState dan useEffect
+useState digunakan untuk meyimpaan dan mengolah data yang dapat mengalami perubahan selama program berjalan. react bekerja ketika state berubah dimana tampilan komponen yang memanggil useState akan diperbarui seperti halaman koleksi memperbarui jika ada data disimpan atau di hapus.
+useEffect yaitu mengambil data dan mengirim data ke komponen lain seperti pada useLocalStorage.js, useEffect digunakan untuk menyimpan perubahan data inven ke  localstorage.
+
+3. Context API
+Context API digunakan untuk membagikan data ke banyak komponen tanpa props berulang seperti KoleksiProvider.js menggunakan koleksicontext.jsx untuk memberikan data inven, status loading, tampilan eror, fungsi tambah dan juga hapus.
+
+4. React Router DOM 
+React Router DOM adalah kamus yang berisikan aturan navigasi antarhalaman pada aplikasi react agar tidak perlu melkaukan refresh seluruh halaman. seperti pada Datail.jsx menggunakan useParams untuk mengambil id dari url dan usenavigate untuk kembali ke halaman koleksi
+
+5. Rendering
+Rendering adalah tampilan web dimana penampilan data dapat secara dinamis sesuai dengan konidisi dan isi ada menggunakan react seperti filter() pada koleksi.jsx untuk menampilkan barang berdasarkan judul kemudian reduce() pada statistik.jsx untuk menghitung jumlah barang sesuai katagorinya. 
