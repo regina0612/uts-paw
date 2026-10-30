@@ -1,21 +1,31 @@
     .formulir {
-    display: flex;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #E4EBDD;
+    border-radius: 12px;
+    box-sizing: border-box;
     flex-direction: column;
-    gap: 0.5rem;
-    max-width: 480px;
     }
 
     .formulir label {
-    margin-top: 0.75rem;
+    display: block;
+    color: #263D2B;
+    margin-bottom: 0.5rem;
     font-weight: 600;
     }
 
     .formulir input,
     .formulir select {
-    padding: 0.5rem 0.75rem;
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #263D2B;
+    color: #E4EBDD;
     border: 1px solid #c4c4c4;
     border-radius: 6px;
     font: inherit;
+    box-sizing: border-box;
     }
 
     .formulir [role='alert'] {
@@ -30,7 +40,7 @@
     padding: 0.6rem 1.5rem;
     border: 0;
     border-radius: 6px;
-    background: #1f2328;
+    background: #263D2B;
     color: #fff;
     font: inherit;
     cursor: pointer;
@@ -40,4 +50,9 @@
     .formulir button {
         align-self: stretch;
     }
+    }
+    
+    .isi h1 {
+    text-align: center;
+    margin-bottom: 2rem;
     }
