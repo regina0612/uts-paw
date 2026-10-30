@@ -1,3 +1,11 @@
-export default function Halaman404() {
-  return <h1>Halaman tidak ditemukan</h1>
+import { Link } from 'react-router-dom'
+
+export default function TidakDitemukan() {
+  return (
+    <section>
+      <h1>404</h1>
+      <p>Halaman tidak ditemukan.</p>
+      <Link to="/">Beranda</Link>
+    </section>
+  )
 }
