@@ -44,7 +44,7 @@ export default function Tambah() {
           <option value="Perlu Perbaikan">Perlu Perbaikan</option>
         </select>
 
-      <button type="submit">Tambah Inventaris</button>  
+      <button type="submit">Simpan Inventaris</button>  
     </form>
   </section>
   )
