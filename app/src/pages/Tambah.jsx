@@ -12,8 +12,8 @@ export default function Tambah() {
   const navigasi = useNavigate()
   const simpan =  (simpan) => {
     simpan.preventDefault()
-    if (form.judul.trim() === '' || form.kodeAlat.trim() === '' || form.jumlah <= 0) {
-      setError('Judul dan Kode Alat tidak boleh kosong, jumlah barang harus lebih dari 0.')
+    if (form.judul.trim() === '') {
+      setError('Judul tidak boleh kosong.')
       return
     }
     tambah({...form,judul: form.judul.trim(), jumlah: Number(form.jumlah)})
