@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import useKoleksi from '../hooks/useKoleksi.js'
 import { useNavigate } from 'react-router-dom'
+import './Tambah.css'
 
 const kondisiawal = { judul: '', kategori: 'Komputer', kodeAlat: '', jumlah: 0, kondisi: 'Baik' }
 export default function Tambah() {
@@ -24,7 +25,7 @@ export default function Tambah() {
   return (
   <section>
     <h1>Tambah Barang Inventaris</h1>
-    <form onSubmit={simpan} noValidate>
+    <form className="formulir" onSubmit={simpan} noValidate>
       {error && <p role="alert">{error}</p>}
         <label htmlFor="judul">Judul:</label>
         <input type="text" id="judul" name="judul" value={form.judul} onChange={databaru} />
