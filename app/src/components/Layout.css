@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #202B24;
 }
 
 .kepala {
@@ -9,6 +10,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  background: #E4EBDD;
+  color: #263D2B;
 }
 
 .menu {
@@ -16,8 +19,15 @@
   gap: 1rem;
 }
 
+.menu a {
+  color: #263D2B;
+  text-decoration: none;
+}
+
 .menu a.active {
   font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #426347;
 }
 
 .isi {
@@ -26,13 +36,18 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 1.5rem;
+  box-sizing: border-box;
+  color: #E4EBDD;
 }
 
 .kaki {
   padding: 1rem 1.5rem;
-  border-top: 1px solid #dcdcdc;
-  color: #57606a;
+  background: #E4EBDD;
+  color: #263D2B;
   font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .aksi {
@@ -63,11 +78,22 @@
 }
 
 .kartu {
+  background: #E4EBDD;
+  color: #263D2B;
   padding: 1rem;
   border: 1px solid #dcdcdc;
   border-radius: 8px;
 }
 
+.kartu a {
+  color: #263D2B;
+  text-decoration: none;
+}
+
+.kartu a:active {
+  color: #263D2B;
+  text-decoration: none;
+}
 .kartu h3 {
   margin: 0 0 0.25rem;
   font-size: 1.05rem;
@@ -102,4 +128,23 @@
   .daftar-kartu {
     grid-template-columns: 1fr;
   }
+}
+
+#tombol1 {
+  background-color: #E4EBDD;
+  color: #263D2B;
+  display: inline-block;
+  border-radius: 6px;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#tombol1:hover {
+  background-color: #2e4a2f;
+  color: #E4EBDD ;
+  text-decoration: none;
 }

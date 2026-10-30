@@ -21,7 +21,7 @@ export default function Beranda() {
         <p>Jumlah Kategori : {jumlahKategori} kategori</p>
         </section>
       )}
-      <Link to="/koleksi">See all inventaris</Link>
+      <Link to="/koleksi" id = "tombol1" > See all inventaris </Link>
 
     </section>
   )
