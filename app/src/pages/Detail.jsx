@@ -35,8 +35,8 @@ export default function Detail() {
         <dt>Kondisi</dt>
         <dd>{alat.kondisi}</dd>
       </dl>
-      <button onClick={hapusalat}>Hapus</button>
-      <Link to="/koleksi">Back</Link>
+      <button id = "tombolhapus" onClick={hapusalat}>Hapus</button>
+      <Link to="/koleksi" id="tombolbalik">Back</Link>
     </section>
   )
 }

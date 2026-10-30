@@ -72,6 +72,7 @@
 }
 
 .daftar-kartu {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -85,12 +86,12 @@
   border-radius: 8px;
 }
 
-.kartu a {
+.daftar-kartu a {
   color: #263D2B;
   text-decoration: none;
 }
 
-.kartu a:active {
+.daftar-kartu a:active {
   color: #263D2B;
   text-decoration: none;
 }
@@ -107,16 +108,19 @@
 .alat-koleksi {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  gap: 0.75 rem;
+  margin-bottom: 1.5rem;
 }
 
 .alat-koleksi input,
 .alat-koleksi select {
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem 1rem;
+  width: 350px;
   border: 1px solid #c4c4c4;
   border-radius: 6px;
   font: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -148,3 +152,40 @@
   color: #E4EBDD ;
   text-decoration: none;
 }
+ #tombolbalik {
+  background-color: #E4EBDD;
+  color: #263D2B;
+  display: inline-block;
+  border-radius: 6px;
+  margin-left: 0.75rem;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+ }
+
+ #tombolbalik:hover {
+  background-color: #2e4a2f;
+  color: #E4EBDD ;
+  text-decoration: none;
+ }
+
+ #tombolhapus {
+  background-color: #E4EBDD;
+  color: #263D2B;
+  display: inline-block;
+  border-radius: 6px;
+  margin-left: 0.75rem;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+ }
+
+ #tombolhapus:hover {
+  background-color: #2e4a2f;
+  color: #E4EBDD ;
+  text-decoration: none;
+ }
