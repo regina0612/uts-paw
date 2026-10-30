@@ -1,26 +1,30 @@
 .tabel-gulir {
+  width: 100%;
   overflow-x: auto;
 }
 
 .tabel-data {
   width: 100%;
-  max-width: 480px;
+  max-width: 720px;
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
 .tabel-data th,
 .tabel-data td {
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem 1rem;
   border-bottom: 1px solid #dcdcdc;
   text-align: left;
 }
 
 .tabel-data thead th {
-  background: #f1f1f1;
+  background: #E4EBDD;
+  color: #263D2B;
 }
 
 .tabel-data tbody tr:nth-child(even) {
-  background: #fafafa;
+  background: #E4EBDD;
+  color: #263D2B;
 }
 
 .tabel-data td:last-child,
